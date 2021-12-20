@@ -1,4 +1,4 @@
 # dummy_project
 
-This is added by Paul. You should intigrate it into your Repo with a pull.
+This is changed by Paul. Practice using the PULL.
 
