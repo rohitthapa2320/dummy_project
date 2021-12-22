@@ -9,7 +9,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: node index.js
+      - run: node index.js &
       - run: curl http://localhost:3000/
       - run: curl http://localhost:3000/?echop=cryptoxbot
       - run: curl http://localhost:3000/close
