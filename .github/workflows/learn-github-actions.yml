@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: testing-workflow
 on: [push]
 jobs:
   start-server:
@@ -10,3 +10,6 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: node index.js
+      - run: curl http://localhost:3000/
+      - run: curl http://localhost:3000/?echop=cryptoxbot
+      - run: curl http://localhost:3000/close
