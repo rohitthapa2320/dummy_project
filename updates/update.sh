@@ -4,4 +4,4 @@ echo "  $(who)"
 # UPDATE SCRIPT GOES HERE !!!
 
 # POST UPDATE CLEANUP
-mv $0 processed
+mv update.sh processed
