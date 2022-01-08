@@ -16,7 +16,7 @@ curl http://localhost:3000/close
 
 echo "STAT= $(stat -c '%A' 'updates/update.sh')" 
 echo "STAT_VALUE= $([ -f "${updates/update.sh}" ] && [ -r "${updates/update.sh}" ] && [ -x "${updates/update.sh}" ])"
-if [[ [ -f "${updates/update.sh}" ] && [ -r "${updates/update.sh}" ] && [ -x "${updates/update.sh}" ] ]] ; then
+if [ -f "updates/update.sh" ] && [ -r "updates/update.sh" ] && [ -x "updates/update.sh" ] ; then
     echo "UPDATE SCRIPT"
     ./updates/update.sh
     git add .
