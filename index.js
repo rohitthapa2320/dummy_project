@@ -1,4 +1,5 @@
 const express = require('express');
+const path=require('path');
 
 const app=express();
 
@@ -10,15 +11,16 @@ app.get('/close', (req,res) => {
 })
 
 app.get("/", (req,res) => {
-    let response="Hello World Again !!!\n";
-    if(req.query.echop)
-        response=`${response} Param= ${req.query.echop}`;
+    res.sendFile(path.join(__dirname, '/index.html'));
+    // let response="Hello World Again !!!\n";
+    // if(req.query.echop)
+    //     response=`${response} Param= ${req.query.echop}`;
 
-    res.send(response);
+    // res.send(response);
 
 });
 
 
 app.listen(PORT, () => {
-    console.log(`Connected to PORT ${PORT}`);
+    console.log(`Connected to PORT ${PORT} \n`);
 });
