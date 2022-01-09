@@ -5,7 +5,7 @@ const app=express();
 const PORT=3000;
 
 app.get('/close', (req,res) => {
-    res.send("Exited !!!");
+    res.send("Exited !!!\n");
     process.exit();
 })
 
