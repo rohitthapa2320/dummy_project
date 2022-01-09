@@ -10,7 +10,7 @@ app.get('/close', (req,res) => {
 })
 
 app.get("/", (req,res) => {
-    let response="Hello World Again !!!";
+    let response="Hello World Again !!!\n";
     if(req.query.echop)
         response=`${response} Param= ${req.query.echop}`;
 
